@@ -1,6 +1,6 @@
-import { ShoppingParkingLotCalculator } from "../src/behavior/strategy/ShoppingParkingLotCalculator"
-import { BeachParkingLotCalculator } from "../src/behavior/strategy/BeachParkingLotCalculator"
-import { ParkingLot } from "../src/behavior/strategy/ParkingLot"
+import { ShoppingParkingLotCalculator } from "../src/behavioral/strategy/ShoppingParkingLotCalculator"
+import { BeachParkingLotCalculator } from "../src/behavioral/strategy/BeachParkingLotCalculator"
+import { ParkingLot } from "../src/behavioral/strategy/ParkingLot"
 
 test('should be able to calculate parkinglot ticket price in the beach', () => {
     const payload = {
@@ -13,8 +13,7 @@ test('should be able to calculate parkinglot ticket price in the beach', () => {
     expect(ticketPrice).toBe(15)
 })
 
-
-test('should be able to calculate the parkinglot ticket price in the shopping(12h - 14h)', () => {
+test('should be able to calculate the parkinglot ticket price in the shopping', () => {
     const payload = {
         plate: '111AAA',
         checkInDate: new Date('2022-10-10T10:00:00')
@@ -24,7 +23,6 @@ test('should be able to calculate the parkinglot ticket price in the shopping(12
     const ticketPrice = parkingLot.checkout(payload.plate, new Date('2022-10-10T13:00:00'))
     expect(ticketPrice).toBe(9)
 })
-
 
 test('should be able to not churging for the parkinglot ticket price in the shopping at the lunch time(12h - 14h)', () => {
     const payload = {
