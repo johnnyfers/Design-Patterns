@@ -3,6 +3,7 @@ import { LightThemeFactory } from "../src/creational/abstract_factory/LightTheme
 import { View } from "../src/creational/abstract_factory/View"
 
 test('should be able to create a light theme GUI', () => {
+    expect.assertions(3)
     const lightThemeFactory = new LightThemeFactory()
     const view = new View(lightThemeFactory)
     expect(view.label.color).toBe('black')
@@ -11,6 +12,7 @@ test('should be able to create a light theme GUI', () => {
 })
 
 test('should be able to create a dark theme GUI', () => {
+    expect.assertions(3)
     const darkThemeFactory = new DarkThemeFactory()
     const view = new View(darkThemeFactory)
     expect(view.label.color).toBe('white')
