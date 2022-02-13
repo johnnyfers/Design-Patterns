@@ -1,3 +1,4 @@
+// facade
 import { ReportFacade } from "../src/structural/facade/ReportFacade"
 
 test('should be able to generate a report', () => {

@@ -1,3 +1,4 @@
+// singleton
 import { Connection } from "../src/creational/singleton/Connection"
 
 test('should always connect in the same instance', () => {

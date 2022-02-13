@@ -1,3 +1,4 @@
+// strategy
 import { ShoppingParkingLotCalculator } from "../src/behavioral/strategy/ShoppingParkingLotCalculator"
 import { BeachParkingLotCalculator } from "../src/behavioral/strategy/BeachParkingLotCalculator"
 import { ParkingLot } from "../src/behavioral/strategy/ParkingLot"

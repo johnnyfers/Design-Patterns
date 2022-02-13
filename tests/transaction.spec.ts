@@ -1,3 +1,4 @@
+// adapter
 import { PagSeguroTransactionAdapter } from "../src/structural/adapter/PagSeguroTransactionAdapter"
 import { PagSeguroTransaction } from "../src/structural/adapter/PagSeguroTransaction"
 import { PayPalTransaction } from "../src/structural/adapter/PayPalTransaction"
